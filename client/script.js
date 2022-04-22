@@ -9,7 +9,7 @@ function getApi(){
       axios.get(`http://localhost:1425/api/${cepValue}`,)
       .then(res => {
          if(res.data.erro){
-            divCEPFound.innerHTML = "ERRO : CPF NÃO ENCONTRADO"
+            divCEPFound.innerHTML = "<p id='msgError'>ERRO : CEP NÃO ENCONTRADO</p>"
          }
          else{
             window.location.href = "#cepFound"
@@ -40,6 +40,7 @@ function getApi(){
 
    }else{
       alert('CEP INVÁLIDO')
+      divCEPFound.innerHTML = "<p id='msgError'>ERRO: CEP INVÁLIDO</p>"
    }
    
 }

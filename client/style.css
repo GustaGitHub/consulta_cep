@@ -55,14 +55,26 @@ header{
    border: none;
 }
 
+#msgError{
+   margin-top: 25px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: darkred;
+   animation: keyframesDefault 1s ease-in-out;
+}
+
 .cepFound{
    text-align: center;
    font-size: 18pt;
    margin-bottom: 25px;
 }
 
+.cepFound h1{
+   animation: keyframesDefault 1s ease-in-out;
+}
+
 .cepFound li{
    list-style: none;
+   animation: keyframesDefault 1s ease-in-out;
 }
 
 .cepFound button{
@@ -73,4 +85,17 @@ header{
    cursor: pointer;
    border: none;
    border-radius: 10px;
+   animation: keyframesDefault 1s ease-in-out;
+}
+
+@keyframes keyframesDefault{
+   0%{
+      opacity: 0;
+   }
+   50%{
+      opacity: 0.5;
+   }
+   100%{
+      opacity: 1;
+   }
 }

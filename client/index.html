@@ -1,0 +1,28 @@
+   <!DOCTYPE html>
+   <html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Busca CEP</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+
+      <header>
+         <h1 class="title">CONSULTA CEP</h1>
+         <p class="title">Informe um CEP Válido Abaixo para obter algumas informações</p>
+      </header>  
+      <div id="form">
+         <input type="text" placeholder="12345-671" id="cep"/>
+         <button onclick="getApi()">
+               Buscar CEP
+         </button>
+      </div>
+      <div class="cepFound" id="cepFound">
+         <!-- Informações prévias do CEP encontrado-->
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <script src="script.js" defer></script>
+   </body>
+   </html>

@@ -1,0 +1,76 @@
+
+/* Arquivo de Estilo do Projeto */
+html{
+   scroll-behavior: smooth;
+}
+
+body{
+   margin: 0;
+   padding: 0;
+   outline: 0;
+   box-sizing: border-box;
+}
+
+header{
+   background-color: #80b3ff;
+   padding: 3%;
+   color: white;
+   height: 100px;
+   margin-top: -25px;
+}
+
+.title{
+   text-align: center;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+   padding: 5%;
+   background-color: azure;
+}
+
+#form input{
+   padding: 2%;
+   font-size: 18pt;
+   margin-bottom: 55px;
+   width: 50%;
+   border-radius: 10px;
+   border: none;
+   box-shadow: 1px 13px 13px 8px rgba(0,0,0,0.39);
+}
+
+#form button{
+   padding: 15px;
+   width: 40%;
+   font-size: 18pt;
+   cursor: pointer;
+   border-radius: 5px;
+   color: white;
+   background-color: #80b3ff;
+   border: none;
+}
+
+.cepFound{
+   text-align: center;
+   font-size: 18pt;
+   margin-bottom: 25px;
+}
+
+.cepFound li{
+   list-style: none;
+}
+
+.cepFound button{
+   padding: 30px;
+   font-size: 18pt;
+   background-color: #80b3ff;
+   color: white;
+   cursor: pointer;
+   border: none;
+   border-radius: 10px;
+}

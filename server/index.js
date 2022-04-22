@@ -17,10 +17,6 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
-app.get('/',(req,res)=>{
-   res.send('Funcionado')
-})
-
 app.get('/api/:cep',(req,res, next)=>{
    let { cep } = req.params
    
